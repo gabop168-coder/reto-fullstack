@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Full Stack - Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de Login / Registro -->
+    <div id="login-view" class="container">
+        <h2>Bienvenido</h2>
+        <p>Inicia sesión o regístrate para continuar</p>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button onclick="login()">Iniciar Sesión</button>
+        <button onclick="registrar()" class="btn-secundario">Registrarse</button>
+    </div>
+
+    <!-- Pantalla Principal (CRUD de Tareas) -->
+    <div id="dashboard-view" class="container hidden">
+        <h2>Mis Tareas</h2>
+        <div class="input-group">
+            <input type="text" id="nueva-tarea" placeholder="Escribe una nueva tarea...">
+            <button onclick="crearTarea()">Agregar</button>
+        </div>
+        <ul id="lista-tareas"></ul>
+        <button onclick="logout()" class="btn-peligro">Cerrar Sesión</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

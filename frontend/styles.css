@@ -1,0 +1,20 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+body { background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 1rem; color: #333; }
+.container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
+.hidden { display: none !important; }
+h2 { margin-bottom: 0.5rem; color: #004aad; }
+p { margin-bottom: 1.5rem; font-size: 0.9rem; color: #666; }
+input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; transition: border-color 0.3s; }
+input:focus { border-color: #004aad; outline: none; }
+button { width: 100%; padding: 12px; background-color: #004aad; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 1rem; transition: background 0.3s; margin-bottom: 10px; }
+button:hover { background-color: #003380; }
+.btn-secundario { background-color: #f4f7f6; color: #004aad; border: 1px solid #004aad; }
+.btn-secundario:hover { background-color: #e2e8e6; }
+.btn-peligro { background-color: #d9534f; margin-top: 20px; }
+.btn-peligro:hover { background-color: #c9302c; }
+.input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+.input-group input { margin-bottom: 0; }
+.input-group button { width: auto; margin-bottom: 0; padding: 0 20px; }
+ul { list-style: none; text-align: left; }
+li { background: #f9f9f9; margin-bottom: 10px; padding: 15px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid #004aad; }
+li button { width: auto; padding: 8px 15px; background-color: #d9534f; margin-bottom: 0; font-size: 0.9rem; }
